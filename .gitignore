@@ -1,3 +1,10 @@
-.idea
-node_modules
+# IDE
+.idea/
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
 .env.*
+!.env.example

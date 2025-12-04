@@ -4,10 +4,10 @@ export const signupSchema = z.object({
   name: z.string().min(2).max(255).trim(),
   email: z.email().max(255).lowercase().trim(),
   password: z.string().min(8).max(128),
-  role: z.enum(['user', 'admin']).default('user')
+  role: z.enum(['guser', 'admin']).default('user'),
 });
 
 export const signInSchema = z.object({
   email: z.email().lowercase().trim(),
-  password: z.string().min(1)
+  password: z.string().min(1),
 });

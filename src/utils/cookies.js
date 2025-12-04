@@ -13,5 +13,5 @@ export const cookies = {
   },
   getMethod: (req, name) => {
     return req.cookies[name];
-  }
+  },
 };
